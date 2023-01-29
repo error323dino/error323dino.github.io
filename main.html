@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Happy Birthday CHEE QIAN</title>
+    <link rel="icon" type="image/x-icon" href="cake.png">
+</head>
+<body>
+ 
+    <div class="container1" style =" text-align: center; position: relative;"  >
+      <img src="The birth of an angel.png" alt="gift" style="width:475px;">
+    </div>
+
+    <div class="container2" >  
+      <img src="folder.png" alt="gift" style="width: 500px; height: 485px; ">
+    </div>
+
+    <div class="container3" >  
+      <img src="note.png" alt="gift" style="width: 500px; height: 450px; ">
+    </div>
+
+    <div class="container4" >  
+      <a href="note.html"><img src="sticknote.png" alt="gift" style="width: 250px; height: 200px; "></a>
+    </div>
+
+    <div class="audio" style="position: fixed; bottom: 200px; left: 300px; z-index: 5;" >  
+      <audio controls>
+        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+        <source src="singing.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="w3-content w3-section" style="position: fixed; bottom: 200px; right: 320px; z-index: 4;">
+      <!-- style="position: fixed;" -->
+          <img class="mySlides"  src="c1.png" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="c3.png" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="c4.png" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="c5.png" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="p2.jpeg" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="p3.jpeg" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="p4.jpeg" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="p5.jpeg" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="p6.jpeg" style="width: 250px; height: 200px;">
+          <img class="mySlides"  src="p7.png" style="width: 250px; height: 200px;">
+
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+    
+</body>
+
+
+<style>
+  body {
+    background-color: lightblue;
+    background-image: url('blue.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .container2 {
+  
+    position: fixed;
+    bottom: 80px;
+    right: 200px;
+    z-index: 3;
+  }
+    
+  .container3 {
+    position: fixed;
+    bottom: 1px;
+    left: 200px;
+    z-index: 2;
+  }
+
+  .container4 {
+    position: fixed;
+    bottom: 1px;
+    right: 150px;
+    z-index: 3;
+  }
+
+  .container4 img:hover {
+    transform:scale(1.15);
+  }
+
+  .mySlides {display:none;}
+
+  
+</style>
+
+
+
+
+</html>
+
